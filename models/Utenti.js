@@ -2,11 +2,6 @@ const { Double } = require('mongodb');
 const mongoose = require ('mongoose');
 
 var schema = new mongoose.Schema({
-    id: {
-        type: String,
-        //se obbligatorio o meno
-        required: true
-    },
 
     nome: {
         type: String,

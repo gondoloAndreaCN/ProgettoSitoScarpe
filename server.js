@@ -22,6 +22,6 @@ db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 /* Se la connessione è andata a buon fine loggiamo a console il messaggio */
-db.once('open', () => {
+db.on('open', () => {
   console.log('Scraping Scarpe | MongoDB Connected');
 });

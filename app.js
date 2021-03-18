@@ -1,3 +1,4 @@
+require("dotenv").config();
 const routerBasic = require("./routes/routerBasics");
 
 // richiedo express
