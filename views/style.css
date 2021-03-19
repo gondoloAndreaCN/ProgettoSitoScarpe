@@ -1,0 +1,33 @@
+.carousel-image {
+	height: 60vh;
+	object-fit: cover; 
+	object-position: 50% 52%;
+}
+
+#carousel {
+	top: 2vh;
+}
+
+.container_desc{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 75vw;
+	margin-left: 10vW;
+	background-color: blanchedalmond;
+}
+
+.figlio{
+	background: grey;
+}
+
+.separator{
+	border: .2px solid black;
+	height: 20vh;
+}
+
+.titoli{
+	background-color: blue;
+}
+
+  
