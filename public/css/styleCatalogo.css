@@ -1,0 +1,12 @@
+.containerPagina{
+    background-color: aqua;
+    height: 60vw;
+    margin-left: 2vw;
+}
+.colonnaUno{
+    background-color: beige;
+}
+
+.colonnaDue{
+    width: 300px;
+}
