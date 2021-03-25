@@ -11,6 +11,9 @@ const morgan = require("morgan");
 const app = express();
 const PORT = 8080;
 
+/* permette di usare la cartella public */
+app.use(express.static(__dirname + '/public'));
+
 // eseguito ad ogni richiesta (middleware) | dev = metodo di visualizzazione
 app.use(morgan("dev"));
 //richiesta e risposta
@@ -19,10 +22,12 @@ app.use(morgan("dev"));
 //     res.send("connesso");
 // })
 
-// specifica il motore da utilizzare
+/* Impostazione del motore di rendering:
+    - non è quindi necessario specificare l'estensione dei file nel 'res.render('nomefile')' */
 app.set('view engine', 'ejs');
 
+/* Impostazione dei router */
 app.use("/", routerBasic);
 
-//esporta il modulo app per usarle in server.js
+/* Esportazione modulo app per l'utilizzo in server.js */
 module.exports = app;

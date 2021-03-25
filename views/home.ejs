@@ -6,71 +6,86 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOME</title>
-  
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <!-- Bootstrap Carousel CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Bootstrap Carousel JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 
+  <!-- Font-images -->
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="/"><img class="logo" src="images/logo.png" alt="logo">
+        <span class="title">Scarper</span></a>
 
-      <!--bottone home-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">  
-        <button type="button" class="btn btn-outline-secondary"> <i class="fas fa-home"></i> </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link btn btn-outline-secondary" href="/"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary" href="/catalogo"><i class="fas fa-book"></i> Catalogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-secondary" href="#"><i class="fas fa-shopping-cart"> Carrello</i></a>
+          </li>
+        </ul>
       </div>
-
-      <!--bottone catalogo-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a class="navbar-brand" href="#">Catalogo</a>
-        <button type="button" class="btn btn-outline-secondary"> <i class="fas fa-book"></i> </button>
-      </div>
-
-      <!--bottone carrello-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a class="navbar-brand" href="#">Carrello</a>
-        <button type="button" class="btn btn-outline-secondary"><i class="fas fa-shopping-cart"></i></button>
-      </div>
-
     </div>
   </nav>
-  
+
   <!-- Definizione dello slider -->
   <div id="carousel" class="carousel carousel-dark slide mx-auto w-75" data-bs-ride="carousel">
     <div class="carousel-inner">
 
       <!-- Indicatori dell'immagine selezionata -->
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+          aria-current="true"></button>
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
       </div>
 
       <!-- Lista delle immagini contenute nello slider -->
       <div class="carousel-item active">
-        <img src="http://www.kajakipodremiza.pl/wp-images/kajakipodremizapl/scarpe-della-nike-donna-29273.jpg" class="carousel-image d-block mx-auto w-75">
+        <img src="http://www.kajakipodremiza.pl/wp-images/kajakipodremizapl/scarpe-della-nike-donna-29273.jpg"
+          class="carousel-image d-block mx-auto w-75">
       </div>
 
       <div class="carousel-item">
-        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/jomszuqr8gw3h18xhpro/scarpa-air-force-1-07-KyTDGepj.jpg" class="carousel-image d-block mx-auto w-75">
+        <img
+          src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/jomszuqr8gw3h18xhpro/scarpa-air-force-1-07-KyTDGepj.jpg"
+          class="carousel-image d-block mx-auto w-75">
       </div>
 
       <div class="carousel-item">
-        <img src="https://images.eprice.it/nobrand/0/Lightbox/693/209233693/scarpe-nike-air-max-command-leather-uomo-grigio.jpg" class="carousel-image d-block mx-auto w-75">
+        <img
+          src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/uoxteud0rv2d2wml9xkl/scarpa-air-force-1-07-3nGnlt.png"
+          class="carousel-image d-block mx-auto w-75">
       </div>
     </div>
 
@@ -85,7 +100,37 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
   </div>
-  
+
+  <br>
+  <br>
+
+  <!--chi siamo/descrizione-->
+  <div class="center">
+    <div class="container-desc">
+      <div class="desc">
+        <h5>CHI SIAMO/DESCRIZIONE</h5>
+        <p>
+          Siamo 4 studenti frequentanti la classe 5° dell'indirizzo
+          di informatica all'ITIS Mario Delpozzo di Cuneo.
+          Il progetto, avente come obiettivo principale la
+          simulazione dell'ambiente di lavoro aziendale,
+          prevede la realzzazione di un applicazione web che
+          permette di visualizzare le informazioni inerenti a diversi
+          modelli di scarpe salvati all'interno di un database ottenuto effettuando
+          uno scraping su diversi servizi di acquisto online, cioè prelevando periodicamente
+          le informazioni da questi ultimi e inserendole all'interno del database del sito
+        </p>
+      </div>
+      <div class="separator"></div>
+      <div class="desc">
+        <h5>Contattaci ai seguenti indirizzi e-mail:</h5>
+        iarno.fiorito@itiscuneo.eu <br>
+        alessio.giraudo@itiscuneo.eu <br>
+        samuele.giraudo@itiscuneo.eu <br>
+        andrea.gondolo@itiscuneo.eu
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
