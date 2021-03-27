@@ -5,7 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CATALOGO</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>Catalogo</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <!-- Bootstrap Carousel CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,17 +26,13 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
+  <!-- Font-images -->
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="../css/style.css">
-
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
@@ -43,36 +49,24 @@
           <li class="nav-item active">
             <a class="nav-link btn btn-outline-secondary" href="/"><i class="fas fa-home"></i> Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link btn btn-outline-secondary" href="/catalogo"><i class="fas fa-book"></i> Catalogo</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-secondary" href="#"><i class="fas fa-shopping-cart"> Carrello</i></a>
+          <li class="nav-item active">
+            <a class="nav-link btn btn-outline-secondary" href="/carrello"><i class="fas fa-shopping-cart"> Carrello</i></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <br>
-  <br>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-
-      <a class="navbar-brand" href="#">Novità scarpe</a>
-
+  <!-- cards -->
+  <div class="container">
+    <div class="row filters">
+      <div class="col-1">FILTRI</div>
     </div>
-  </nav>
-
-  <br>
-  <br>
-
-  <div class="container-fluid containerPagina">
     <div class="row">
-      <div class="col-2 colonnaUno">
-        FILTRI
-      </div>
-      <div class="col-9 colonnaDue">
+      <div class="col">
         <div class="row">
           <div class="col-sm-3">
             <div class="card" style="width: 15rem;">
@@ -140,7 +134,7 @@
             </div>
           </div>
 
-          <div class="col-sm-3">
+          <!-- <div class="col-sm-3">
             <div class="card" style="width: 15rem;">
               <img
                 src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/73e3275e-c0a9-4556-9383-cd95fb09ed87/scarpa-air-max-90-HkN7Qw.jpg"
@@ -160,7 +154,7 @@
                 <a href="#" class="card-link">Another link</a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
