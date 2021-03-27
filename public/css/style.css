@@ -71,6 +71,7 @@ button {
 .center {
 	display: flex;
 	justify-content: center;
+	margin-top: 10vh;
 }
 
 .container-desc{
@@ -93,4 +94,16 @@ button {
 }
 
 
-  
+/*pagina catalogo*/
+.containerPagina{
+    background-color: aqua;
+    height: 60vw;
+    width: 95%;
+}
+.colonnaUno{
+    background-color: red;
+}
+
+.colonnaDue{
+    width: 300px;
+}

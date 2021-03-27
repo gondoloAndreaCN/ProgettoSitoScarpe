@@ -6,5 +6,6 @@ exports.get_home  = (req, res) => {
 
 exports.get_catalogo  = (req, res) => {
     // res.status(200).render("./bisarca");
+    res.status(200).render("./catalogo");
     console.log("\n funziona");
 }
