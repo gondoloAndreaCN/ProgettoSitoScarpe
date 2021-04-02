@@ -1,11 +1,12 @@
-// 04/03/2021 lsti things
-
+//framework di nodejs per strutturare il sito
 const express = require('express');
+//mette in scarpa la sua struttura contenuta in models
 const Scarpa = require('../models/Scarpa');
 
-const app = express;
+//const app = express;
 
-// prendo la pagina
+//??
+//async perchè no bloccante 
 exports.get = async (req, res) => {
     
     // create

@@ -1,5 +1,7 @@
+//libreria per funzioni asincrone
 const mongoose = require ('mongoose');
 
+//struttura collezione
 var schema = new mongoose.Schema({
 
     nome: {
@@ -43,5 +45,6 @@ var schema = new mongoose.Schema({
     }
 });
 
+//mette struttura in un oggetto scarpe e lo esporta
 var Scarpe = mongoose.model('Scarpe', schema);
 module.exports = Scarpe;
