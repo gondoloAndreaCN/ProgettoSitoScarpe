@@ -1,7 +1,7 @@
 //libreria express 
 const express = require("express");
 
-//variabile dove importiamo le funzioni dentro a co ntrollerBasics
+//variabile dove importiamo le funzioni dentro a controllerBasics
 const controllerBasic = require("../controllers/controllerBasics");
 //per controllare il percorso dell'url
 const router = express.Router();
