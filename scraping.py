@@ -52,6 +52,8 @@ for link in productlinks:
 		shoe = '\t{\n\t"id":' + '"' + str(i) + '"' + ',\n\t "name":' + '"' + name + '"' + ', \n\t "model":' + '"' + model + '"' + ', \n\t "price":' + '"' + price + '"' + ', \n\t "color":' + '"' + color + '"' + ', \n\t "sex":' + '"' + sex + '"' + '\n\t} \n'
 	else:
 		shoe = '\t{\n\t"id":' + '"' + str(i) + '"' + ',\n\t "name":' + '"' + name + '"' + ', \n\t "model":' + '"' + model + '"' + ', \n\t "price":' + '"' + price + '"' + ', \n\t "color":' + '"' + color + '"' + ', \n\t "sex":' + '"' + sex + '"' + '\n\t}, \n'
+	
+	jsonFile.write(shoe)
 
 	print(i)
 
