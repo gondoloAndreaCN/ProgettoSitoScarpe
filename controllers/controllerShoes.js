@@ -6,7 +6,7 @@ const Scarpa = require('../models/Scarpa');
 //const app = express;
 
 //??
-//async perchè no bloccante 
+//async perchè non bloccante 
 exports.get = async (req, res) => {
     
     // create

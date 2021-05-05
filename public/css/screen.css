@@ -1,0 +1,32 @@
+@media screen and (max-width: 992px) {
+
+    .navbar-collapse {
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+        min-width: 0 !important;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row !important;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .container-desc {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .separator {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+}
