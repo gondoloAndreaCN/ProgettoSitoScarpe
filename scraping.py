@@ -45,14 +45,16 @@ for link in productlinks:
 	price = soup.find('span', class_='product-price').text.strip()
 	color = soup.find('small', class_='color-name').text.strip()
 	sex = soup.find('li', class_='group-tab active').text.strip()
+	img = soup.find('img', class_='zoom')
+	img = img['src']
 	i += 1
 	id = i
 
 	if(i == counter):
-		shoe = '\t{\n\t"id":' + '"' + str(i) + '"' + ',\n\t "name":' + '"' + name + '"' + ', \n\t "model":' + '"' + model + '"' + ', \n\t "price":' + '"' + price + '"' + ', \n\t "color":' + '"' + color + '"' + ', \n\t "sex":' + '"' + sex + '"' + '\n\t} \n'
+		shoe = '\t{\n\t"id":' + '"' + str(i) + '"' + ',\n\t "name":' + '"' + name + '"' + ', \n\t "model":' + '"' + model + '"' + ', \n\t "price":' + '"' + price + '"' + ', \n\t "color":' + '"' + color + '"' + ', \n\t "sex":' + '"' + sex + '"' +  ', \n\t "img":' + '"' + img + '"' + ' \n\t} \n'
 	else:
-		shoe = '\t{\n\t"id":' + '"' + str(i) + '"' + ',\n\t "name":' + '"' + name + '"' + ', \n\t "model":' + '"' + model + '"' + ', \n\t "price":' + '"' + price + '"' + ', \n\t "color":' + '"' + color + '"' + ', \n\t "sex":' + '"' + sex + '"' + '\n\t}, \n'
-	
+		shoe = '\t{\n\t"id":' + '"' + str(i) + '"' + ',\n\t "name":' + '"' + name + '"' + ', \n\t "model":' + '"' + model + '"' + ', \n\t "price":' + '"' + price + '"' + ', \n\t "color":' + '"' + color + '"' + ', \n\t "sex":' + '"' + sex + '"' +  ', \n\t "img":' + '"' + img + '"' + ' \n\t}, \n'
+
 	jsonFile.write(shoe)
 
 	print(i)
